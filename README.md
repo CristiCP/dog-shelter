@@ -9,6 +9,6 @@ University Assignment repository for the Dog Shelter App! This C++ application i
 ## Features
 
 - **User-Friendly Interface**: A clean and intuitive GUI for easy navigation.
-- **Adoption Center Functions**: Implement core functions for managing an animal adoption center.
+- **Dog Shelter Functions**: Implement core functions for managing a dog shelter.
 - **Interactive Elements**: Utilize buttons, forms, and widgets to interact with the app.
 - **Educational Tool**: Gain hands-on experience with C++ and GUI development.
