@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>A9Class</class>
+ <widget class="QMainWindow" name="A9Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>A9</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>80</y>
+      <width>381</width>
+      <height>135</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <pointsize>26</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Choose the type of file:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="csv_button">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>CSV</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="html_button">
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>HTML</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="A9.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>csv_button</sender>
+   <signal>clicked()</signal>
+   <receiver>A9Class</receiver>
+   <slot>csv_file_selector()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>192</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>473</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>html_button</sender>
+   <signal>clicked()</signal>
+   <receiver>A9Class</receiver>
+   <slot>htm_file_selector()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>219</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>470</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>csv_file_selector()</slot>
+  <slot>htm_file_selector()</slot>
+ </slots>
+</ui>
